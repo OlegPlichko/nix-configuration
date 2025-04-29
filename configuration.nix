@@ -77,6 +77,17 @@
       git
     ];
   };
+  
+  # Media organizer user with utils
+  users.users.elliott = {
+    isNormalUser = true;
+    packages = with pkgs; [
+      phockup
+      ffmpeg
+      exiftool
+      ifuse
+    ];
+  };
 
   # programs.firefox.enable = true;
 
