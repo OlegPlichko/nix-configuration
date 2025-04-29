@@ -110,6 +110,16 @@
     ];
   };
 
+  # Data horder user with tools
+  users.users.henri = {
+    isNormalUser = true;
+    packages = with pkgs; [
+      # archivebox # insecure django version
+      yt-dlp-light
+      # readeck # unstable
+      # linkding # will be in 25.05
+    ];
+  };
   # programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:
