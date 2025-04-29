@@ -90,6 +90,15 @@
     ];
   };
 
+  # Writer user wtih note taking tools
+  users.users.ernest = {
+    isNormalUser = true;
+    packages = with pkgs; [
+      memos
+      # trilium-server # only supported on x86_64-linux
+    ];
+  };
+
   # programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:
