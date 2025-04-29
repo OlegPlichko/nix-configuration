@@ -99,6 +99,17 @@
     ];
   };
 
+  # Storage user with disk utils and backup tools
+  users.users.levi = {
+    isNormalUser = true;
+    packages = with pkgs; [
+      rsync
+      rclone
+      rmlint
+      ncdu
+    ];
+  };
+
   # programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:
