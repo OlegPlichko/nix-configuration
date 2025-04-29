@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./sudouser.nix
+      ./snapraid.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
