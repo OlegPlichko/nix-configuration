@@ -68,6 +68,16 @@
   #   ];
   # };
 
+  # Coder user
+  users.users.oleg = {
+    isNormalUser = true;
+    packages = with pkgs; [
+      vim
+      wget
+      git
+    ];
+  };
+
   # programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:
