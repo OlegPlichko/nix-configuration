@@ -71,12 +71,18 @@
   # Coder user
   users.users.oleg = {
     isNormalUser = true;
+    shell=pkgs.bash;
     packages = with pkgs; [
       vim
       wget
       git
+      neovim
+      gcc
     ];
   };
+
+  # Set environment variables
+  environment.variables.TERM = "xterm-256color";
 
   # programs.firefox.enable = true;
 
