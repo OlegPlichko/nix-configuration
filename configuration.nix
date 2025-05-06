@@ -23,6 +23,13 @@
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
+  # Mount QEMU VirtFS shared folder from host to guest
+  fileSystems."/mnt/shared" = {
+    fsType = "9p";
+    device = "share";
+    options = [ "trans=virtio" "version=9p2000.L" "rw" "_netdev" "nofail" "auto" "0" "0" ];
+  };
+
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
