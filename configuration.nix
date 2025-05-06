@@ -79,6 +79,7 @@
       neovim
       gcc
       ripgrep
+      zk
     ];
   };
 
