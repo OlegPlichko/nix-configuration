@@ -87,6 +87,7 @@
       gcc
       ripgrep
       zk
+      stylua
     ];
   };
 
