@@ -14,6 +14,20 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			local startify = require("alpha.themes.startify")
+			startify.section.header.val = {
+				[[                                                                                   ]],
+				[[     /\__\         /\  \         /\  \         /\__\          ___        /\__\     ]],
+				[[    /::|  |       /::\  \       /::\  \       /:/  /         /\  \      /::|  |    ]],
+				[[   /:|:|  |      /:/\:\  \     /:/\:\  \     /:/  /          \:\  \    /:|:|  |    ]],
+				[[  /:/|:|  |__   /::\~\:\  \   /:/  \:\  \   /:/__/  ___      /::\__\  /:/|:|__|__  ]],
+				[[ /:/ |:| /\__\ /:/\:\ \:\__\ /:/__/ \:\__\  |:|  | /\__\  __/:/\/__/ /:/ |::::\__\ ]],
+				[[ \/__|:|/:/  / \:\~\:\ \/__/ \:\  \ /:/  /  |:|  |/:/  / /\/:/  /    \/__/~~/:/  / ]],
+				[[     |:/:/  /   \:\ \:\__\    \:\  /:/  /   |:|__/:/  /  \::/__/           /:/  /  ]],
+				[[     |::/  /     \:\ \/__/     \:\/:/  /     \::::/__/    \:\__\          /:/  /   ]],
+				[[     /:/  /       \:\__\        \::/  /       ~~~~         \/__/         /:/  /    ]],
+				[[     \/__/         \/__/         \/__/                                   \/__/     ]],
+				[[                                                                                   ]],
+			}
 			-- available: devicons, mini, default is mini
 			-- if provider not loaded and enabled is true, it will try to use another provider
 			startify.file_icons.provider = "devicons"
